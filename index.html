@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="main">
+        <div class="page">
+        <h1>Transform your text now!</h1>
+        <section>
+            <div class="input">
+                <h3>Paste your text here</h3>
+                <textarea id="textarea"></textarea>
+                <div class="btn">
+                    <button onclick="upperText()">Upper-case</button>
+                    <button onclick="lowerText()">Lower-case</button>
+                    <button onclick="capText()">Capitalize</button>
+                    <!-- <select onchange="changeColor()" name="Select a color" id="select">
+                        njkjkkj
+                        <option value="Select a color">Select a color</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                        <option value="Purple">Purple</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Yellow">Yellow</option>
+                        <option value="Black">Black</option>
+                    </select> -->
+                    <label for="color">Select a color: <input type="color" id="color" onchange="colorInp()"></label>
+                    <!-- <button onclick="colorInp()">Done</button> -->
+                </div>
+            </div>
+            <div class="result">
+                <h3>Result</h3>
+                <div class="box">
+                    <p id="para"></p>
+                </div>
+                <!-- <button onclick="checkText()">Check</button> -->
+            </div>
+        </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

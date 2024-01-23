@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*::selection{
+    background-color: #e45c61;
+    color: #fff;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.page{
+    height: 100vh;
+    width: 100%;
+    background-color: #e45c61;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.page>h1{
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.page>h1::selection{
+    background-color: #2DD881;
+    color: #fff;
+}
+.page section{
+    height: 80%;
+    width: 90%;
+    /* margin: 0 auto; */
+    /* background-color: crimson; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section h3{
+    font-size: 25px;
+}
+section .input{
+    height: 100%;
+    width: 47%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.input textarea{
+    width: 95%;
+    height: 80%;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #000;
+}
+.input .btn{
+    height: 10%;
+    width: 95%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn button{
+    padding: 10px 15px;
+    border: none;
+    background-color: #2DD881;
+    color: #1C0B19;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+    transform: 0.5s;
+}
+/* .btn select{
+    padding: 10px;
+}
+.btn select option:nth-child(2){
+    color: red;
+}
+.btn select option:nth-child(3){
+    color: green;
+}
+.btn select option:nth-child(4){
+    color: purple;
+}
+.btn select option:nth-child(5){
+    color: blue;
+}
+.btn select option:nth-child(6){
+    color: orange;
+}
+.btn select option:nth-child(7){
+    color: yellow;
+}
+.btn select option:nth-child(8){
+    color: black;
+} */
+.btn button:hover{
+    background-color: #6FEDB7;
+}
+.btn button:nth-child(1){
+    text-transform: uppercase;
+}
+.btn button:nth-child(2){
+    text-transform: lowercase;
+}
+.btn input{
+  cursor: pointer;
+}
+section .result{
+    height: 100%;
+    width: 47%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.result .box{
+    width: 95%;
+    height: 91%;
+    padding: 10px;
+    border: 2px solid #000;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+@media (max-width: 550px) {
+    .page{
+        height: 210vh;
+        width: 100%;
+        background-color: #e45c61;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .page section{
+        height: 90%;
+        width: 95%;
+        /* margin: 0 auto; */
+        /* background-color: crimson; */
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    section .input{
+        height: 50%;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-top: 10px;
+    }
+    .input textarea{
+        width: 95%;
+        height: 65%;
+        padding: 10px;
+        font-size: 16px;
+        outline: none;
+        border: 2px solid #000;
+    }
+    .input .btn{
+        height: 20%;
+        width: 95%;
+        /* border: 1px solid #000; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .btn button{
+        padding: 10px;
+        border: none;
+        background-color: #2DD881;
+        color: #1C0B19;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: 700;
+        transform: 0.5s;
+        margin: 5px 0;
+    }
+    section .result{
+        height: 40%;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
